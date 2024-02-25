@@ -1,1 +1,1 @@
-{}
+{"interval": "1day", "assets": ["TSLA"], "strategy": [{"type": "IF", "conditions": [{"type": "BINARY", "first": {"name": "CCI", "args": {"length": "20", "ticker": "TSLA"}, "advanced": {}}, "second": {"name": "constant", "args": {"value": "100"}}, "comp": ">", "operator": ""}], "if_action": {"type": "ACTION", "steps": [{"action": "allocation", "asset": "TSLA", "amount": "100"}]}, "else_action": {"type": "ACTION", "steps": [{"action": "allocation", "amount": "0"}]}}]}
